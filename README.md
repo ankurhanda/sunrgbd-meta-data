@@ -13,5 +13,5 @@ This alleviates the burden of having to install MATLAB (that requires a license)
 
 ##More meta data
 
-- Camera rotation matrices are provided to allow for mapping the normal vector to gravity vector to obtain height from ground plane.
-- Code to compute the DHA features from the depth image. The computeDHA_SUNRGBD.m file should run in octave.
+- Camera rotation matrices are provided in **sunrgbd_train_T_fileNames.txt**, to allow for mapping the floor normal vector to gravity vector to obtain height from ground plane.
+- Code to compute the DHA features from the depth image. The **computeDHA_SUNRGBD.m** file should run in octave.
