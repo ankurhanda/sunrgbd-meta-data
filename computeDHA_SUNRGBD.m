@@ -49,7 +49,7 @@ for i = 1:5285
     fprintf(T_file,'%f %f %f %f\n\n',Rtilt(3,1),Rtilt(3,2),Rtilt(3,3),val_zero);
 
     
-%     normals = compute_normals_Viorica(Id,size(Id,2),size(Id,1),K(1,1), K(2,2), K(1,3), K(2,3), 1);
+%     normals = compute_normals(Id,size(Id,2),size(Id,1),K(1,1), K(2,2), K(1,3), K(2,3), 1);
 %     
 %     [U, V] = meshgrid(1:size(Id,2),1:size(Id,1));
 %     
