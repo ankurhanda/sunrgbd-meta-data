@@ -10,3 +10,8 @@ The **SUNRGBD2Dseg.mat** contained in the **SUNRGBDtoolbox/Metadata** directory 
 - The mappings from 37 class labels to 13 class labels is provided in [SceneNetv1.0](https://github.com/ankurhanda/SceneNetv1.0) repository.
 
 This alleviates the burden of having to install MATLAB (that requires a license) on your computer and parsing the .mat files in the SUN RGB-D dataset.
+
+##More meta data
+
+- Camera rotation matrices are provided to allow for mapping the normal vector to gravity vector to obtain height from ground plane.
+- Code to compute the DHA features from the depth image. The computeDHA_SUNRGBD.m file should run in octave.
