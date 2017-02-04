@@ -17,8 +17,12 @@ This alleviates the burden of having to install MATLAB (that requires a license)
 - Depth images are contained in the depth_bfx folder in the SUN RGB-D dataset. You should be able to see that in one of the folders after you compress the .zip file ``SUNRGBD/kv1/NYUdata/NYU0034/depth_bfx``. These depth images have been obtained by running an inpainting algorithm on the raw depth images (that contain holes and missing values) to obtain a complete depth image for which each pixel has a depth value.
 - Make sure you have octave installed on your machine. If not, please install via apt-get on your ubuntu machine ``sudo apt-get install octave`` or ``pacman -Sy octave`` on your arch linux machine.
 - Run the computeDHA_SUNRGBD.m file in Octave (type octave --no-gui in your terminal) and it should return you the DHA features saved .bin file (if you wish to save in another format you could easily modify the code). 
-
-##More meta data
-
 - Camera rotation matrices are provided in **sunrgbd_train_T_fileNames.txt**, to allow for mapping the floor normal vector to gravity vector to obtain height from ground plane.
 - Code to compute the DHA features from the depth image. The **computeDHA_SUNRGBD.m** file should run in octave.
+
+## How do I benchmark? 
+[getAccuracyNYU.m](https://github.com/ankurhanda/SceneNetv1.0/blob/master/getAccuracyNYU.m) available in the [SceneNetv1.0](https://github.com/ankurhanda/SceneNetv1.0/) repository allows you to obtain the avereage global and class accuracies. 
+
+## What are the classes and where is the mapping form the class number to the class name?
+
+The mapping is also available at [SceneNetv1.0](https://github.com/ankurhanda/SceneNetv1.0/) repository.
