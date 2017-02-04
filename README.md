@@ -2,9 +2,9 @@
 
 The **SUNRGBD2Dseg.mat** contained in the **SUNRGBDtoolbox/Metadata** directory needs a RAM of about **64GB** to load either in MATLAB or Octave. Therefore, for future use and to avoid any dependence on the .mat file, the data (*i.e.* semantic segmentation labels) is extracted and stored in this repository. We also provide links to the RGB data. If you are looking to do semantic segmentation on the RGB images, this repository is self contained for that and you should be able to do it without having to download the dataset from the original links provided in the SUN RGB-D paper. However, if you need additional depth data, you will need to download the tgz file from the dataset link. We also provide code to turn depth into DHA features used in the SceneNet paper, by using the Rotation provided in the SUN RGB-D dataset. 
 
-- Train and test images path names in the SUN RGB-D
-- 37 Class labels for images both in training and test dataset compressed in the .tar.gz file.
-- The first 5050 images in the .tar.gz file contain labels for test dataset while training set labels begin from 5051 and end at 10335.
+- Train and test images path names in the SUN RGB-D provided in the **sunrgbd_training_images.txt** and **sunrgbd_testing_images.txt** respectively.
+- 37 Class labels for images both in training and test dataset compressed in the **sunrgbd_test_train_labels.tar.gz** file.
+- The first 5050 images in the **sunrgbd_test_train_labels.tar.gz** contain labels for test dataset while training set labels begin from 5051 and end at 10335.
 - Training dataset (5285 jpg images) is available from [SUNRGBD-train_images.tgz](http://www.doc.ic.ac.uk/~ahanda/SUNRGBD-train_images.tgz)
 - Test dataset (5050 jpg images) is available from [SUNRGBD-test_images.tgz](http://www.doc.ic.ac.uk/~ahanda/SUNRGBD-test_images.tgz)
 - The mappings from 37 class labels to 13 class labels is provided in [SceneNetv1.0](https://github.com/ankurhanda/SceneNetv1.0) repository.
