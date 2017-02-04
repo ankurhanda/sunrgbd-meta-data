@@ -14,6 +14,7 @@ This alleviates the burden of having to install MATLAB (that requires a license)
 ## How do I compute the DHA features?
 
 - Download the SUN RGB-D dataset and make sure your paths are set properly. The SUN RGB-D dataset can be obtained from the link, [SUN RGB-D](http://rgbd.cs.princeton.edu/data/SUNRGBD.zip). The SUN RGB-D toolbox needed to parse the files is available here at [toolbox](http://rgbd.cs.princeton.edu/data/SUNRGBDtoolbox.zip).
+- Depth images are contained in the depth_bfx folder in the SUN RGB-D dataset. You should be able to see that in one of the folders after you compress the .zip file ``SUNRGBD/kv1/NYUdata/NYU0034/depth_bfx``. These depth images have been obtained by running an inpainting algorithm on the raw depth images (that contain holes and missing values) to obtain a complete depth image for which each pixel has a depth value.
 - Make sure you have octave installed on your machine. If not, please install via apt-get on your ubuntu machine ``sudo apt-get install octave`` or ``pacman -Sy octave`` on your arch linux machine.
 - Run the computeDHA_SUNRGBD.m file in Octave (type octave --no-gui in your terminal) and it should return you the DHA features saved .bin file (if you wish to save in another format you could easily modify the code). 
 
