@@ -11,6 +11,11 @@ The **SUNRGBD2Dseg.mat** contained in the **SUNRGBDtoolbox/Metadata** directory 
 
 This alleviates the burden of having to install MATLAB (that requires a license) on your computer and parsing the .mat files in the SUN RGB-D dataset.
 
+## How do I compute the DHA features?
+
+- Download the SUN RGB-D dataset and make sure your paths are set properly. 
+- Run the computeDHA_SUNRGBD.m file in Octave (octave --no-gui) and it should return you the DHA features saved .bin file (if you wish to save in another format you could easily modify the code). 
+
 ##More meta data
 
 - Camera rotation matrices are provided in **sunrgbd_train_T_fileNames.txt**, to allow for mapping the floor normal vector to gravity vector to obtain height from ground plane.
