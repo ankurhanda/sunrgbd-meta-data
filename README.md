@@ -1,6 +1,6 @@
 ##What does this repository contain?
 
-The **SUNRGBD2Dseg.mat** contained in the **SUNRGBDtoolbox/Metadata** directory needs a RAM of about **64GB** to load either in MATLAB or Octave. Therefore, the data (*i.e.* semantic segmentation labels) that is needed to do semantic segmentation experiments is extracted and stored in this repository.
+The **SUNRGBD2Dseg.mat** contained in the **SUNRGBDtoolbox/Metadata** directory needs a RAM of about **64GB** to load either in MATLAB or Octave. Therefore, for future use and to avoid any dependence on the .mat file, the data (*i.e.* semantic segmentation labels) is extracted and stored in this repository. We also provide links to the RGB data. If you are looking to do semantic segmentation on the RGB images, this repository is self contained for that and you should be able to do it without having to download the dataset from the original links provided in the SUN RGB-D paper. However, if you need additional depth data, you will need to download the tgz file from the dataset link. We also provide code to turn depth into DHA features used in the SceneNet paper, by using the Rotation provided in the SUN RGB-D dataset. 
 
 - Train and test images path names in the SUN RGB-D
 - 37 Class labels for images both in training and test dataset compressed in the .tar.gz file.
