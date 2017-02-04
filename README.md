@@ -13,8 +13,9 @@ This alleviates the burden of having to install MATLAB (that requires a license)
 
 ## How do I compute the DHA features?
 
-- Download the SUN RGB-D dataset and make sure your paths are set properly. 
-- Run the computeDHA_SUNRGBD.m file in Octave (octave --no-gui) and it should return you the DHA features saved .bin file (if you wish to save in another format you could easily modify the code). 
+- Download the SUN RGB-D dataset and make sure your paths are set properly. The SUN RGB-D dataset can be obtained from the link, [SUN RGB-D](http://rgbd.cs.princeton.edu/data/SUNRGBD.zip). The SUN RGB-D toolbox needed to parse the files is available here at [toolbox](http://rgbd.cs.princeton.edu/data/SUNRGBDtoolbox.zip).
+- Make sure you have octave installed on your machine. If not, please install via apt-get on your ubuntu machine ``sudo apt-get install octave`` or ``pacman -Sy octave`` on your arch linux machine.
+- Run the computeDHA_SUNRGBD.m file in Octave (type octave --no-gui in your terminal) and it should return you the DHA features saved .bin file (if you wish to save in another format you could easily modify the code). 
 
 ##More meta data
 
