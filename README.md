@@ -7,7 +7,7 @@ The **SUNRGBD2Dseg.mat** contained in the **SUNRGBDtoolbox/Metadata** directory 
 - The first 5050 images in the **sunrgbd_test_train_labels.tar.gz** contain labels for test dataset while training set labels begin from 5051 and end at 10335.
 - Training dataset (5285 jpg images) is available from [SUNRGBD-train_images.tgz](http://www.doc.ic.ac.uk/~ahanda/SUNRGBD-train_images.tgz)
 - Test dataset (5050 jpg images) is available from [SUNRGBD-test_images.tgz](http://www.doc.ic.ac.uk/~ahanda/SUNRGBD-test_images.tgz)
-- The mappings from 37 class labels to 13 class labels is provided in [SceneNetv1.0](https://github.com/ankurhanda/SceneNetv1.0) repository.
+- The mappings from 37 class labels to 13 class labels are provided in [SceneNetv1.0](https://github.com/ankurhanda/SceneNetv1.0) repository.
 
 This alleviates the burden of having to install MATLAB (that requires a license) on your computer and parsing the .mat files in the SUN RGB-D dataset.
 
