@@ -1,4 +1,4 @@
-function normals = compute_normals_Viorica(depth,width_downsample,height_downsample,Fx, Fy, U0, V0, scale)
+function normals = compute_normals(depth,width_downsample,height_downsample,Fx, Fy, U0, V0, scale)
 
 % width = 320;
 % height = 240;
