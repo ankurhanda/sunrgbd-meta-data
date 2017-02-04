@@ -16,9 +16,8 @@ This alleviates the burden of having to install MATLAB (that requires a license)
 - Download the SUN RGB-D dataset and make sure your paths are set properly. The SUN RGB-D dataset can be obtained from the link, [SUN RGB-D](http://rgbd.cs.princeton.edu/data/SUNRGBD.zip). The SUN RGB-D toolbox needed to parse the files is available here at [toolbox](http://rgbd.cs.princeton.edu/data/SUNRGBDtoolbox.zip).
 - Depth images are contained in the depth_bfx folder in the SUN RGB-D dataset. You should be able to see that in one of the folders after you compress the .zip file ``SUNRGBD/kv1/NYUdata/NYU0034/depth_bfx``. These depth images have been obtained by running an inpainting algorithm on the raw depth images (that contain holes and missing values) to obtain a complete depth image for which each pixel has a depth value.
 - Make sure you have octave installed on your machine. If not, please install via apt-get on your ubuntu machine ``sudo apt-get install octave`` or ``pacman -Sy octave`` on your arch linux machine.
-- Run the computeDHA_SUNRGBD.m file in Octave (type octave --no-gui in your terminal) and it should return you the DHA features saved .bin file (if you wish to save in another format you could easily modify the code). 
-- Camera rotation matrices are provided in **sunrgbd_train_T_fileNames.txt**, to allow for mapping the floor normal vector to gravity vector to obtain height from ground plane.
-- Code to compute the DHA features from the depth image. The **computeDHA_SUNRGBD.m** file should run in octave.
+- Run the **computeDHA_SUNRGBD.m** file in Octave (type octave --no-gui in your terminal) and it should return you the DHA features saved .bin file (if you wish to save in another format you could easily modify the code). 
+- Camera rotation matrices are provided in **sunrgbd_train_T_fileNames.txt**, to allow for mapping the floor normal vector to gravity vector to obtain height from ground plane. 
 
 ## How do I benchmark? 
 [getAccuracyNYU.m](https://github.com/ankurhanda/SceneNetv1.0/blob/master/getAccuracyNYU.m) available in the [SceneNetv1.0](https://github.com/ankurhanda/SceneNetv1.0/) repository allows you to obtain the avereage global and class accuracies. 
