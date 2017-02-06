@@ -7,7 +7,52 @@ The **SUNRGBD2Dseg.mat** contained in the **SUNRGBDtoolbox/Metadata** directory 
 - The first 5050 images in the **sunrgbd_test_train_labels.tar.gz** contain labels for test dataset while training set labels begin from 5051 and end at 10335.
 - Training dataset (5285 jpg images) is available from [SUNRGBD-train_images.tgz](http://www.doc.ic.ac.uk/~ahanda/SUNRGBD-train_images.tgz)
 - Test dataset (5050 jpg images) is available from [SUNRGBD-test_images.tgz](http://www.doc.ic.ac.uk/~ahanda/SUNRGBD-test_images.tgz)
-- The mappings from 37 class labels to 13 class labels are provided in [SceneNetv1.0](https://github.com/ankurhanda/SceneNetv1.0) repository.
+- The mappings from 37 class labels to 13 class labels are provided in [SceneNetv1.0](https://github.com/ankurhanda/SceneNetv1.0) repository. The 37 class names are stored in **seg37list.mat** that comes in the SUNRGBDtoolbox but it contains the following list. 
+~~~
+>> seg = load('seg37list.mat');
+>> seg.seg37list
+ans = 
+{
+  [1,1] = wall
+  [1,2] = floor
+  [1,3] = cabinet
+  [1,4] = bed
+  [1,5] = chair
+  [1,6] = sofa
+  [1,7] = table
+  [1,8] = door
+  [1,9] = window
+  [1,10] = bookshelf
+  [1,11] = picture
+  [1,12] = counter
+  [1,13] = blinds
+  [1,14] = desk
+  [1,15] = shelves
+  [1,16] = curtain
+  [1,17] = dresser
+  [1,18] = pillow
+  [1,19] = mirror
+  [1,20] = floor_mat
+  [1,21] = clothes
+  [1,22] = ceiling
+  [1,23] = books
+  [1,24] = fridge
+  [1,25] = tv
+  [1,26] = paper
+  [1,27] = towel
+  [1,28] = shower_curtain
+  [1,29] = box
+  [1,30] = whiteboard
+  [1,31] = person
+  [1,32] = night_stand
+  [1,33] = toilet
+  [1,34] = sink
+  [1,35] = lamp
+  [1,36] = bathtub
+  [1,37] = bag
+}
+~~~
+
 
 This alleviates the burden of having to install MATLAB (that requires a license) on your computer and parsing the .mat files in the SUN RGB-D dataset.
 
