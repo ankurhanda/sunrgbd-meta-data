@@ -57,6 +57,12 @@ ans =
 
 This alleviates the burden of having to install MATLAB (that requires a license) on your computer and parsing the .mat files in the SUN RGB-D dataset.
 
+## Training on RGB data for 13 classes 
+
+- Get the RGB training data from [SUNRGBD-training _images.tgz](http://www.doc.ic.ac.uk/~ahanda/SUNRGBD-train_images.tgz)
+- Get the 13 class labels from [train13classlabels.tgz](https://github.com/ankurhanda/sunrgbd-meta-data/blob/master/train13labels.tgz).
+- Correspondingly, get the test RGB images from [SUNRGBD-test_images.tgz](http://www.doc.ic.ac.uk/~ahanda/SUNRGBD-test_images.tgz) and 13 class labels from [test13classlabels.tgz](https://github.com/ankurhanda/sunrgbd-meta-data/blob/master/train13labels.tgz) for any benchmarking.
+
 ## How do I compute the DHA features?
 
 - Download the SUN RGB-D dataset and make sure your paths are set properly. The SUN RGB-D dataset can be obtained from the link, [SUN RGB-D](http://rgbd.cs.princeton.edu/data/SUNRGBD.zip). The SUN RGB-D toolbox needed to parse the files is available here at [toolbox](http://rgbd.cs.princeton.edu/data/SUNRGBDtoolbox.zip).
