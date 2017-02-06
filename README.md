@@ -59,7 +59,7 @@ This alleviates the burden of having to install MATLAB (that requires a license)
 
 ## Training on RGB data for 13 classes 
 
-- Get the RGB training data from [SUNRGBD-training _images.tgz](http://www.doc.ic.ac.uk/~ahanda/SUNRGBD-train_images.tgz)
+- Get the RGB training data from [SUNRGBD-training_images.tgz](http://www.doc.ic.ac.uk/~ahanda/SUNRGBD-train_images.tgz)
 - Get the 13 class labels from [train13labels.tgz](https://github.com/ankurhanda/sunrgbd-meta-data/blob/master/train13labels.tgz).
 - Correspondingly, get the test RGB images from [SUNRGBD-test_images.tgz](http://www.doc.ic.ac.uk/~ahanda/SUNRGBD-test_images.tgz) and 13 class labels from [test13labels.tgz](https://github.com/ankurhanda/sunrgbd-meta-data/blob/master/test13labels.tgz) for any benchmarking.
 
