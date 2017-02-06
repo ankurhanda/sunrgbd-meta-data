@@ -53,6 +53,7 @@ ans =
 }
 ~~~
 
+- 13 class training/testing labels are provided in **train13labels.tgz** and **test13labels.tgz** respectively, in this directory.
 
 This alleviates the burden of having to install MATLAB (that requires a license) on your computer and parsing the .mat files in the SUN RGB-D dataset.
 
