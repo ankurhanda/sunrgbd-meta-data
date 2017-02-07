@@ -72,7 +72,7 @@ This alleviates the burden of having to install MATLAB (that requires a license)
 - Move the first 5050 files in ``test`` directory 
 ``mv ../img-00[0-4]*.png test && mv ../img-0050[0-4]*.png test && mv ../img-005050.png test`` 
 and remaining in ``train`` directory ``mv ../img-*.png train``.
-- If you need to create a ``.txt`` file with names of corresponding rgbs and labels, follow this
+- If you need to create a ``.txt`` file with names of corresponding rgbs and labels, please follow this 
 ``paste sunrgbd_rgb_files.txt -d' ' sunrgbd_labels37_files.txt`` where ``sunrgbd_rgb_files.txt`` contains the names of the rgb files and similarly for ``sunrgbd_labels37_files.txt``
 
 ## How do I compute the DHA features?
