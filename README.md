@@ -63,6 +63,18 @@ This alleviates the burden of having to install MATLAB (that requires a license)
 - Get the 13 class labels from [train13labels.tgz](https://github.com/ankurhanda/sunrgbd-meta-data/blob/master/train13labels.tgz).
 - Correspondingly, get the test RGB images from [SUNRGBD-test_images.tgz](http://www.doc.ic.ac.uk/~ahanda/SUNRGBD-test_images.tgz) and 13 class labels from [test13labels.tgz](https://github.com/ankurhanda/sunrgbd-meta-data/blob/master/test13labels.tgz) for any benchmarking.
 
+
+## Training on RGB data for 37 classes
+
+- Get the RGBs as above.
+- Dowload the **sunrgbd_train_test_labels.tar.gz** in this directory and untar it ``tar -xvzf sunrgbd_train_test_labels.tar.gz``.
+- Create two directories ``mkdir -p labels/train labels/test``
+- Move the first 5050 files in ``test`` directory 
+``mv ../img-00[0-4]*.png test && mv ../img-0050[0-4]*.png test && mv ../img-005050.png test`` 
+and remaining in ``train`` directory ``mv ../img-*.png train``.
+- If you need to create a ``.txt`` file with names of corresponding rgbs and labels, follow this
+``paste sunrgbd_rgb_files.txt -d' ' sunrgbd_labels37_files.txt`` where ``sunrgbd_rgb_files.txt`` contains the names of the rgb files and similarly for ``sunrgbd_labels37_files.txt``
+
 ## How do I compute the DHA features?
 
 - Download the SUN RGB-D dataset and make sure your paths are set properly. The SUN RGB-D dataset can be obtained from the link, [SUN RGB-D](http://rgbd.cs.princeton.edu/data/SUNRGBD.zip). The SUN RGB-D toolbox needed to parse the files is available here at [toolbox](http://rgbd.cs.princeton.edu/data/SUNRGBDtoolbox.zip).
