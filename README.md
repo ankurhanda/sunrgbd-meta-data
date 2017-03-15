@@ -96,6 +96,8 @@ We now also provide links to depth data which are
 - training depth [training_data_depth](https://www.doc.ic.ac.uk/~ahanda/sunrgb_train_depth.tgz) (505MB)
 - test depth [test_data_depth](https://www.doc.ic.ac.uk/~ahanda/sunrgb_test_depth.tgz) (550MB)
 
+*To obtain the depth in meters, divide the png values by 10,000.*
+
 ## How do I compute the DHA features?
 
 - Download the SUN RGB-D dataset and make sure your paths are set properly. The SUN RGB-D dataset can be obtained from the link, [SUN RGB-D](http://rgbd.cs.princeton.edu/data/SUNRGBD.zip). The SUN RGB-D toolbox needed to parse the files is available here at [toolbox](http://rgbd.cs.princeton.edu/data/SUNRGBDtoolbox.zip).
