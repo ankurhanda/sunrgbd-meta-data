@@ -96,7 +96,7 @@ We now also provide links to depth data which are
 - training depth [training_data_depth](https://www.doc.ic.ac.uk/~ahanda/sunrgb_train_depth.tgz) (505MB)
 - test depth [test_data_depth](https://www.doc.ic.ac.uk/~ahanda/sunrgb_test_depth.tgz) (550MB)
 
-*To obtain the depth in meters, divide the png values by 10,000.*
+**To obtain the depth in meters, divide the png values by 10,000.**
 
 ## How do I compute the DHA features?
 
